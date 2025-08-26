@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Day 4 Task</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @font-face {
+            font-family: 'poppins';
+            src: url('fonts/Poppins.woff2') format('woff2'),
+                url('fonts/cursive.ttf') format('truetype'),
+                url('fonts/Poppins.woff') format('woff');
+        }
+
+        body {
+            margin: 10px;
+        }
+
+        .heading {
+            font-family: 'poppins', 'Arial';
+            text-align: center;
+            margin: 40px;
+        }
+
+        .about {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: justify;
+            margin-top: 50px;
+            text-indent: 30px;
+        }
+
+        .container {
+            display: flex;
+            border: 1px solid;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 10px;
+            margin-top: 50px;
+            flex-wrap: wrap;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .box {
+            background-color: #1DB954 ;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            padding: 5px;
+            margin: 5px;
+            min-width: 10px;
+            text-align: center;
+
+        }
+
+        .relative-box {
+            margin-top: 50px;
+            position: relative;
+            border: 1px solid;
+            background-color: #1DB954 ;
+            color: white;
+            font-weight: bolder;
+            font-size: 1.5rem;
+            min-height: 60px;
+            max-width: 250px;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+            text-align: center;
+
+        }
+
+        .absolute-box {
+            position: absolute;
+            color: rgb(254, 253, 253);
+            font-size: 1.5rem;
+            top: -3px;
+            right: 119px;
+
+        }
+        .stick
+        {
+            position: sticky;
+            margin-top: 50px;
+            background-color: #1DB954 ;
+            text-align: center;
+            font-weight: bold;
+            color: aliceblue;
+            padding: 10px;
+            font-family: 'poppins';
+            font-size: 1.25rem;
+            top: 10px;
+            z-index: 1000;
+        }
+        .fixed{
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size: 2rem;
+            color: aliceblue;
+            background-color:#1DB954 ;
+            padding: 10px;
+            border-radius: 50%;
+            border: none;
+            z-index: 2000;
+
+        }
+        .box-model{
+            margin: 50px;
+            border: 2px solid;
+            padding: 10px;
+            background-color:#1DB954 ;
+            text-align: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="heading">
+        <h1>Music 𝄞</h1>
+        <p>Music is a powerful expression of emotion.</p>
+    </header>
+    <main>
+        <p class="about">Music is the rhythm of life, echoing emotions we often can't express.
+            It transcends language, culture, and time, connecting hearts across the world.
+            From soothing melodies to powerful beats, it shapes our moods and memories.
+            Each note tells a story, inviting us to feel, reflect, and dream.
+            In silence or celebration, music is always there — a faithful companion.</p>
+
+        <div class="container">
+            <div class="box">Melody</div>
+            <div class="box">Rhythm</div>
+            <div class="box">Harmony</div>
+            <div class="box">Tempo</div>
+
+        </div>
+
+        <div class="relative-box">Start__Music
+            <div class="absolute-box">▶</div>
+        </div>
+
+        <div class="stick">Listen EveryDay</div>
+
+        <p class="about">Music is a universal language that transcends borders, cultures, and generations. From ancient tribal rhythms to modern digital beats, music has always played a central role in human expression. It allows people to share emotions, stories, and experiences without the need for words. Whether it's a joyful celebration or a moment of deep sorrow, music helps us connect with others and ourselves.</p>
+        <p class="about">There are countless genres of music, each with its unique style, instruments, and cultural significance. Classical music showcases technical skill and emotional depth, while genres like pop, rock, and hip-hop reflect the energy and voice of contemporary society. Folk and traditional music often preserve the identity and history of communities, passed down from generation to generation.</p>
+        <p class="about">Music is a universal language that transcends borders, cultures, and generations. From ancient tribal rhythms to modern digital beats, music has always played a central role in human expression. It allows people to share emotions, stories, and experiences without the need for words. Whether it's a joyful celebration or a moment of deep sorrow, music helps us connect with others and ourselves.</p>
+        <p class="about">There are countless genres of music, each with its unique style, instruments, and cultural significance. Classical music showcases technical skill and emotional depth, while genres like pop, rock, and hip-hop reflect the energy and voice of contemporary society. Folk and traditional music often preserve the identity and history of communities, passed down from generation to generation.</p>
+        <p class="about">Music is a universal language that transcends borders, cultures, and generations. From ancient tribal rhythms to modern digital beats, music has always played a central role in human expression. It allows people to share emotions, stories, and experiences without the need for words. Whether it's a joyful celebration or a moment of deep sorrow, music helps us connect with others and ourselves.</p>
+        <p class="about">There are countless genres of music, each with its unique style, instruments, and cultural significance. Classical music showcases technical skill and emotional depth, while genres like pop, rock, and hip-hop reflect the energy and voice of contemporary society. Folk and traditional music often preserve the identity and history of communities, passed down from generation to generation.</p>
+        <p class="about">Music is a universal language that transcends borders, cultures, and generations. From ancient tribal rhythms to modern digital beats, music has always played a central role in human expression. It allows people to share emotions, stories, and experiences without the need for words. Whether it's a joyful celebration or a moment of deep sorrow, music helps us connect with others and ourselves.</p>
+        <p class="about">There are countless genres of music, each with its unique style, instruments, and cultural significance. Classical music showcases technical skill and emotional depth, while genres like pop, rock, and hip-hop reflect the energy and voice of contemporary society. Folk and traditional music often preserve the identity and history of communities, passed down from generation to generation.</p>
+    
+        <button class="fixed">⟳</button>
+        
+        <div class="box-model">
+            <h2>Favourite Music Composer</h2>
+            A R Rahman <br>
+            Yuvan Shanker Raja <br>
+            Harris Jayaraj <br>
+            G V Prakash
+            Anirudh
+        </div>
+    </main>
+    
+     <footer>
+        &copy; tharunkumar .All rights reserved.
+    </footer>
+</body>
+
+</html>
