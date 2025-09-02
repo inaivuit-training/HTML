@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .trans{
+            height: 100px;
+            width: 100px;
+            background-color: mediumseagreen;
+            transition-duration: 5s;
+            /* transition-property: background-color; */
+            transition-timing-function: linear;
+            transition-delay: 1s;
+            
+        }
+        .trans:hover{
+            background-color: black;
+            width: 200px;
+            /* transform: rotate(30deg); */
+            transform: scale(2);
+            transform:translate(210px) ;
+        }
+    </style>
+</head>
+<body>
+    <div class="trans"></div>
+</body>
+</html>
