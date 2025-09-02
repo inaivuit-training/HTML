@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    @font-face {
+        font-family: 'Story-Script';
+        src: url('Fonts/StoryScript-Regular.ttf') format('truetype'),
+            url('Fonts/StoryScript-Regular.woff') format('woff'),
+            url('Fonts/StoryScript-Regular.woff2') format('woff2');
+    }
+    body{
+    background-color: #f3f3f3;
+    }
+    h1,
+    .sticky-call {
+        font-family: 'Story-Script';
+        text-align: center;
+    }
+
+    .sticky-call {
+        position: sticky;
+        padding: 10px;
+        font-size: 1.5rem;
+        background-color: #0d6efd;
+        color: white;
+
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100px;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 10px;
+        margin-bottom: 40px;
+        
+    }
+
+    .movies {
+        background-color: white;
+        margin: 5px;
+        padding: 5px;
+        width: 300px;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .rel-cont{
+        position: relative;
+        padding: 10px;
+        width: auto;
+        background-color: #0d6dfd4e;
+        color: black;
+    }
+    .abs-cont{
+        position: absolute;
+        background-color: #f3f3f3;
+        right: 10px;
+    }
+    .abs-cont i{
+        font-size: 20px;
+        color:black;
+    }
+    .help-btn{
+        position: fixed;
+        right: 20px;
+        bottom: 50px;
+        background-color:#0d6efd;
+        border-radius: 50%;
+        text-align: center;
+        width: 50px;
+        padding: 5px;
+        font-size: 1.5rem;
+        color: white;
+    }
+    .box-mod{
+        white-space: wrap;
+        width: 500px;
+        border: 5px solid red;
+        margin: 5px;
+        padding: 8px;
+        background-color: aquamarine;
+    }
+    .footer-div{
+        background-color: #0d6efd;
+        color: white;
+        position:fixed;
+        bottom: 0;
+        padding: 10px;
+        width:1500px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="sticky-call">Upgrade to Prime & Enjoy Ad Free Shows ! </div>
+    <h1>MOVIE WORLD</h1>
+    <div class="container">
+        <div class="movies">Comedy</div>
+        <div class="movies">Horror</div>
+        <div class="movies">Action</div>
+        <div class="movies">Sci-Fi</div>
+    </div> <br>
+
+    <div class="rel-cont">Gangers
+        <div class="abs-cont"> <i class="fa-regular fa-circle-play"> </i></div>
+    </div>
+    <div class="help-btn">?</div>
+    <div class="box-mod">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem voluptates provident quod
+        reprehenderit dicta sit tempore. Odit debitis itaque at iste, blanditiis in vel. Voluptatibus aspernatur modi
+        repudiandae ipsa in ut. Natus vitae, tenetur officia atque quod quasi dolores cumque libero inventore vero earum
+        harum aspernatur, voluptatem, ullam sequi ratione?
+    </div>
+    <div class="footer-div">&copy; All rights are received.</div>
+</body>
+
+</html>
