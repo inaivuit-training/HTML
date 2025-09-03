@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> 
+
+<style>  
+
+    :root{ 
+        --bg-color: rgb(236, 113, 236);
+        --text-color: red; 
+        --padding: 10px;
+    } 
+    .Variables{ 
+         background-color: var(--bg-color); 
+         color: var(--text-color); 
+         padding: var(--padding);
+    }
+    .container{ 
+        margin: 0%; 
+        height: 50%;
+        width: 80%; 
+        background-color:aliceblue;
+
+    } 
+    .Animation div{ 
+       background-color: red; 
+       height: 100px; 
+       width: 100px; 
+       border-radius: 50%; 
+       animation-name: circle; 
+       animation-duration: 4s; 
+       position: relative; 
+       animation-fill-mode: forwards;
+    }  
+
+    @keyframes circle { 
+        0%{ 
+            background-color: red; 
+            top: 0;
+            left: 0;
+        } 
+        50%{ 
+            background-color: grey; 
+            top: 0;
+            left: 80%; 
+        } 
+    } 
+.Psedo{ 
+    button:hover { background-color: green;} 
+    input:active { border-color: red;} 
+    input:focus { font-size: 30px;} 
+    a:visited { color: black;}
+}
+ .box1{ 
+   height: 50px; 
+   width: 50%; 
+   background: linear-gradient(to top, blue,purple); 
+
+} 
+.box2{ 
+    margin-top: 10px;
+    height: 50px; 
+    width: 50%; 
+    background: radial-gradient(yellow, red); 
+
+}
+
+
+</style>
+<body>
+    <div class="container"> 
+        <div class="Animation">
+            <h1>Basic Animation</h1> 
+            <div> 
+                
+            </div>
+        </div> 
+        <div class="Variables">
+            <h1>CSS Variables</h1> 
+            <div>
+                <p>This card uses css Variables for colors and padding</p>
+            </div>
+        </div> 
+        <div class="Psedo">
+            <h1>Psedo-Classes</h1> 
+            <button>check</button> 
+            <input type="text" placeholder="type here"> 
+            <a href="http://www.w3schools.com/" target="_blank">link</a>
+        </div>
+        <div class="Gradients">
+            <h1>Gradients</h1>
+             <div class="box1">
+               
+             </div> 
+             <div class="box2">
+
+             </div>
+
+        </div> 
+
+        <div>
+            <audio controls  loop  src="audio.mp3" type="audio/mp3">
+
+            </audio> 
+            <video  controls width="400" height="250"  src="video.mp4" type="video/mp4"> </video>
+        </div>
+
+    </div>
+</body>
+</html>
