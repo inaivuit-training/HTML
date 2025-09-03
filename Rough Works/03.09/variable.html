@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --color_main:tomato;
+            --color_box:green;
+            --text_color:black;
+            --text_size:1.5rem;
+            --padding:10px;
+            
+        }
+        .container{
+            width: 500px;
+            height: 500px;
+            background-color:var(--color_main);
+            padding:var(--padding);
+            margin: var(--padding);
+        }
+        .box{
+            background-color:var(--color_box);
+            width: 100px;
+            height: 100px;
+            margin: var(--padding);
+
+    
+        }
+        .grad{
+            width: 500px;
+            height: 500px;
+            margin: auto;
+            background-color: aqua;
+            /* background: linear-gradient(white,black,green); */
+            /* background: radial-gradient(green,black); */
+            /* background: linear-gradient(to right,green,black); */
+             /* background: linear-gradient(to left top,green,black);  */
+             /* background:radial-gradient(black 30%,green 30%); */
+             background: repeating-radial-gradient(green 10px,green 20px,black 20px,black 30px);
+       
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box1</div>
+        <div class="box">box1</div>
+        <div class="box">box1</div>
+    </div>
+
+    <div class="grad"></div>
+</body>
+</html>

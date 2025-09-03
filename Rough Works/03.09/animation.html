@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            border-radius: 50%;
+            margin: 50px;
+            animation-name: circle;
+            animation-duration: 9s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 100;
+            position: relative;
+        }
+
+        @keyframes circle {
+            0% {
+                left: 0px;
+            }
+
+            25% {
+                background-color: cornflowerblue;
+            }
+
+            50% {
+                background-color: green;
+            }
+
+            100% {
+                border-radius: 30%;
+                left: 300px;
+                width: 300px;
+                height: 300px;
+                background-color: blueviolet;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <!-- <h1>audio</h1>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mp3">
+    </audio>
+    <h1>video</h1>
+    <video controls 
+    width="700px" 
+    height="600px" 
+    poster="thumb.jpeg" 
+    src="video.mp4"></video> -->
+</body>
+
+</html>
