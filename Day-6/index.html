@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root {
+        --text-color: whitesmoke;
+    }
+
+    body {
+        background-color: #4682b4;
+        color: var(--text-color);
+    }
+
+    .bs-animation {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: blue;
+
+        animation-name: circle;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        position: relative;
+    }
+
+    @keyframes circle {
+
+        0%,
+        30% {
+            background-color: red;
+            left: 0;
+        }
+
+        50%,
+        80% {
+            background-color: blue;
+
+        }
+
+        100% {
+            background-color: green;
+            left: 400px;
+        }
+    }
+
+    button {
+        padding: 5px;
+        background-color: red;
+        color: whitesmoke;
+        border-radius: 5px;
+        font-size: 1.15rem;
+    }
+
+    button:hover {
+        background-color: green;
+    }
+
+    button:focus {
+        font-size: 1.35rem;
+    }
+
+    a {
+        text-decoration: none;
+        padding: 5px;
+        font-size: 1.15rem;
+
+    }
+
+    a:focus {
+        border: 2px solid blue;
+        color: white;
+        border-radius: 5px;
+    }
+    a:visited{color:burlywood;}
+
+    .linear {
+        width: 600px;
+        height: 60px;
+        border-radius: 8px;
+        background: linear-gradient(to right, blue, purple);
+    }
+
+    .radial {
+        width: 600px;
+        height: 60px;
+        border-radius: 8px;
+        background: radial-gradient(yellow, red);
+    }
+</style>
+
+<body>
+    <h2>Basic Animation</h2>
+    <div class="bs-animation"></div> <br> <br>
+
+    <h2>Css Variables</h2>
+    <p>This code uses css variables </p>
+
+    <h2>Pseudo-class</h2> <br>
+
+    <button type="button">Click Me</button>  <a href="https://www.swiggy.com" target="_blank">Visit Link</a><br>
+
+    <h2>Gradients</h2>
+    <div class="linear"></div> <br>
+    <div class="radial"></div>
+
+    <h2>Audio || video</h2>
+
+    <audio controls src="song.mp3" type="audio/mp3"></audio> <br> <br>
+
+    <video controls width="500px" height="300px" poster="poster.jpeg" src="video.mp4" type="video/mp4"></video>
+</body>
+
+</html>
