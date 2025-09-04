@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        @font-face {
+            font-family: 'Story-Script';
+            src: url('Fonts/StoryScript-Regular.ttf') format('truetype'),
+                url('Fonts/StoryScript-Regular.woff') format('woff'),
+                url('Fonts/StoryScript-Regular.woff2') format('woff2');
+        }
+
+        /* Grid System */
+        .container {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .row {
+            position: relative;
+            width: 100%;
+        }
+
+        .row [class^="col"] {
+            float: left;
+            margin: 0.5rem 2%;
+            min-height: 0.125rem;
+        }
+
+        .col-1,
+        .col-2,
+        .col-3,
+        .col-4,
+        .col-5,
+        .col-6,
+        .col-7,
+        .col-8,
+        .col-9,
+        .col-10,
+        .col-11,
+        .col-12 {
+            width: 96%;
+        }
+
+        .col-1-sm {
+            width: 4.33%;
+        }
+
+        .col-2-sm {
+            width: 12.66%;
+        }
+
+        .col-3-sm {
+            width: 21%;
+        }
+
+        .col-4-sm {
+            width: 29.33%;
+        }
+
+        .col-5-sm {
+            width: 37.66%;
+        }
+
+        .col-6-sm {
+            width: 46%;
+        }
+
+        .col-7-sm {
+            width: 54.33%;
+        }
+
+        .col-8-sm {
+            width: 62.66%;
+        }
+
+        .col-9-sm {
+            width: 71%;
+        }
+
+        .col-10-sm {
+            width: 79.33%;
+        }
+
+        .col-11-sm {
+            width: 87.66%;
+        }
+
+        .col-12-sm {
+            width: 96%;
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .hidden-sm {
+            display: none;
+        }
+
+        @media only screen and (min-width: 540px) {
+
+            .col-1-md {
+                width: 4.33%;
+            }
+
+            .col-2-md {
+                width: 12.66%;
+            }
+
+            .col-3-md {
+                width: 21%;
+            }
+
+            .col-4-md {
+                width: 29.33%;
+            }
+
+            .col-5-md {
+                width: 37.66%;
+            }
+
+            .col-6-md {
+                width: 46%;
+            }
+
+            .col-7-md {
+                width: 54.33%;
+            }
+
+            .col-8-md {
+                width: 62.66%;
+            }
+
+            .col-9-md {
+                width: 71%;
+            }
+
+            .col-10-md {
+                width: 79.33%;
+            }
+
+            .col-11-md {
+                width: 87.66%;
+            }
+
+            .col-12-md {
+                width: 96%;
+            }
+        }
+
+        @media only screen and (min-width: 720px) {
+            .col-1 {
+                width: 4.33%;
+            }
+
+            .col-2 {
+                width: 12.66%;
+            }
+
+            .col-3 {
+                width: 21%;
+            }
+
+            .col-4 {
+                width: 29.33%;
+            }
+
+            .col-5 {
+                width: 37.66%;
+            }
+
+            .col-6 {
+                width: 46%;
+            }
+
+            .col-7 {
+                width: 54.33%;
+            }
+
+            .col-8 {
+                width: 62.66%;
+            }
+
+            .col-9 {
+                width: 71%;
+            }
+
+            .col-10 {
+                width: 79.33%;
+            }
+
+            .col-11 {
+                width: 87.66%;
+            }
+
+            .col-12 {
+                width: 96%;
+            }
+
+            .hidden-sm {
+                display: block;
+            }
+        }
+
+        header {
+            background-color: slategray;
+            text-align: center;
+            padding: 0.5rem;
+            color: whitesmoke;
+            font-family: 'Story-Script';
+            margin-bottom: 5px;
+        }
+
+        .hero {
+            background: url(https://picsum.photos/1200/400?food) center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .menu-item {
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 1rem;
+            /* width: 300px; */
+            text-align: center;
+            transition: transform 0.5s;
+            margin-bottom: 5px;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .menu-item h2,
+        .menu-item p {
+            transition: all 0.3s ease-in-out;
+        }
+        footer{
+             background-color: slategray;
+            text-align: center;
+            padding: 0.2rem;
+            color: whitesmoke;
+            font-family: 'Story-Script';
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Restaurant</h1>
+    </header>
+
+    <section class="hero ">
+        <h2>Welcome to Delicious Eats</h2>
+        <p>Fresh. Tasty. Healthy.</p>
+    </section>
+
+    <section class="container">
+        <h2 class="center">Our Menu</h2>
+        <div class="row ">
+            <div class="col-4 col-6-md col-12-sm">
+                <div class="menu-item">
+                    <img src="img/food1.jpeg" alt="Freshly made foods" loading="eager">
+                    <h2>Non-Veg Meals</h2>
+                    <p>Spicy and Delicious</p>
+                </div>
+            </div>
+
+            <div class="col-4 col-6-md col-12-sm">
+                <div class="menu-item">
+                    <img src="img/food2.jpeg" alt="Freshly made meat" loading="eager">
+                    <h2>Meat</h2>
+                    <p>Spicy & juicy and Delicious</p>
+                </div>
+            </div>
+
+            <div class="col-4 col-6-md col-12-sm">
+                <div class="menu-item">
+                    <img src="img/food3.jpeg" alt="Yummy Tummy Dosa" loading="eager">
+                    <h2>Dosa</h2>
+                    <p>Yummy and tasty Dosa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; All rights are reserved.</p>
+    </footer>
+</body>
+
+</html>
