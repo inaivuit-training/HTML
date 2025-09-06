@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li:first-child{color: aqua;}
+        ul li:nth-child(2){color: rgb(22, 167, 9);}
+        ul li:nth-child(3){color: rgb(191, 17, 107)}
+        
+        input:required{border :2px solid red}
+        input:valid{border: 2px solid green;}
+    
+        p::after{
+            content: "mr";
+            color:rgb(133, 215, 9)
+        }
+    </style>
+</head>
+<body>
+    <div class="demo">
+        <ul>
+            <li>parent</li>
+            <li>child1</li>
+            <li>child2</li>
+            <li>child3</li>
+
+        </ul>
+    </div>
+
+    <div>
+        <input type="text" required placeholder="required">
+        <br><br><input type="email" placeholder="enter email">
+    </div>
+
+    <div>
+        <p>Tharunkumar</p>
+    </div>
+</body>
+</html>
