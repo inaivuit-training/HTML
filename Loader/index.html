@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Loader page</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: cadetblue;
+            
+        }
+        .content{
+            visibility: hidden;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            animation: showIn 1s ease forwards;
+            animation-delay: 3s;
+            opacity: 0;
+        }
+        .loader-container{
+            display: flex;
+            position: fixed;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            animation: showOut 1s ease forwards;
+            animation-delay: 3s;
+        }
+        .loader{
+            
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border-bottom: 7px dotted rgb(255, 255, 255);
+            animation:spin 1s linear infinite
+
+        }
+        @keyframes spin {
+            0%{transform: rotate(0deg);
+                }
+            100%{transform: rotate(360deg);}
+        }
+
+        @keyframes showOut {
+            to{opacity: 0;
+            visibility: hidden;}
+        }
+        @keyframes showIn{
+            to{opacity: 1;
+            visibility: visible;}
+        }
+    </style>
+</head>
+<body>
+    <div class="loader-container">
+         <div class="loader"></div>
+    </div>
+   
+    <div class="content">
+        <h1>
+            welcome to the Great kariGalan Magic show
+        </h1>
+        <p>Vaangama Vaanga..Veru Yengum Kilaigal Illai !!</p>
+    </div>
+</body>
+</html>
