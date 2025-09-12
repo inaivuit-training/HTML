@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demon Slayer</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        font-size: 20px;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: rgba(117, 122, 118, 0.282);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        
+    }
+
+    .card {
+        display: flex;
+        width: 70%;
+        border-radius: 20px;
+        background-color: aliceblue;
+        border-radius: 10px;
+    }
+
+    .banner {
+        flex: 1;
+    }
+    .banner img{
+        width:100%;
+        height:100%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+
+    .content {
+        flex: 1;
+        padding: 40px;
+
+    }
+
+    .head {
+        color: rgba(32, 25, 15, 0.41);
+        font-weight: bold;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        margin-bottom: 40px;
+        margin-top: 20px;
+
+    }
+
+    .sub {
+        font-family: monospace;
+        font-size: 2rem;
+        margin-bottom: 40px;
+        font-style: italic;
+    }
+
+    .about {
+
+        margin-bottom: 40px;
+        font-size: 1.25rem;
+        color: rgba(0, 0, 0, 0.54);
+
+    }
+
+    .price {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .offPrice {
+        color: rgb(11, 86, 25);
+        font-size: 2rem;
+        font-weight: bold;
+
+    }
+
+    .actualPrice {
+        text-decoration: line-through;
+        color: rgba(0, 0, 0, 0.637);
+    }
+
+    .book button {
+        background-color: rgba(5, 76, 5, 0.882);
+        font-size: 2rem;
+        border: none;
+        padding: 5px;
+        border-radius: 10px;
+        color: white;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    @media (max-width: 540px) {
+        .card {
+            flex-direction: column;
+            max-height: 90%;
+        }
+
+        .banner {
+            height: 30vh;
+            flex: none;
+
+        }
+        .banner img{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+
+        .content {
+
+            height: auto;
+            padding: 20px;
+        }
+
+        html {
+            font-size: 15px;
+        }
+    }
+</style>
+
+<body>
+
+    <div class="card">
+        <div class="banner">
+            <img src="demon.jpg" alt="imgage">
+        </div>
+
+        <div class="content">
+            <p class="head">ANIME</p>
+            <h1 class="sub">Demon Slayer Infinity castle</h1>
+            <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eum est aliquid eos cum
+                temporibus in animi! Deserunt, voluptas modi!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis eveniet nihil necessitatibus sed
+                voluptate. Cumque possimus pariatur odio error nemo.</p>
+                
+            <div class="price">
+                <p class="offPrice">$99.99</p>
+                <p class="actualPrice">$169.99</p>
+            </div>
+            <div class="book">
+                <button type="submit">Book Now</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
