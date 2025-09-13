@@ -12,9 +12,11 @@
         padding: 0;
         box-sizing: border-box;
     }
-
+    :root{
+        --bottom:40px;
+    }
     html {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     body {
@@ -29,10 +31,11 @@
 
     .card {
         display: flex;
-        width: 70%;
+        width: 60%;
+        height:60vh;
         border-radius: 20px;
         background-color: aliceblue;
-        border-radius: 10px;
+        overflow: hidden;
     }
 
     .banner {
@@ -41,8 +44,6 @@
     .banner img{
         width:100%;
         height:100%;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
     }
 
 
@@ -57,7 +58,7 @@
         font-weight: bold;
         font-size: 1.5rem;
         letter-spacing: 2px;
-        margin-bottom: 40px;
+        margin-bottom: var(--bottom);
         margin-top: 20px;
 
     }
@@ -65,14 +66,14 @@
     .sub {
         font-family: monospace;
         font-size: 2rem;
-        margin-bottom: 40px;
+        margin-bottom: var(--bottom);
         font-style: italic;
     }
 
     .about {
 
-        margin-bottom: 40px;
-        font-size: 1.25rem;
+        margin-bottom: var(--bottom);
+        font-size: 1.5rem;
         color: rgba(0, 0, 0, 0.54);
 
     }
@@ -81,7 +82,7 @@
         display: flex;
         gap: 10px;
         align-items: center;
-        margin-bottom: 40px;
+        margin-bottom: var(--bottom);
     }
 
     .offPrice {
@@ -95,22 +96,25 @@
         text-decoration: line-through;
         color: rgba(0, 0, 0, 0.637);
     }
-
+    .book{
+        text-align: center;
+    }
     .book button {
         background-color: rgba(5, 76, 5, 0.882);
         font-size: 2rem;
         border: none;
-        padding: 5px;
+        padding: 15px;
         border-radius: 10px;
         color: white;
-        width: 100%;
-        margin-bottom: 10px;
+        width: 90%;
+        margin-bottom: var(--bottom);
     }
 
     @media (max-width: 540px) {
         .card {
             flex-direction: column;
-            max-height: 90%;
+            height: 95%;
+            width:90%
         }
 
         .banner {
@@ -118,20 +122,20 @@
             flex: none;
 
         }
-        .banner img{
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        border-bottom-left-radius: 0px;
-    }
+
 
         .content {
 
             height: auto;
             padding: 20px;
         }
+        
 
         html {
-            font-size: 15px;
+            font-size: 14px;
+        }
+        :root{
+            --bottom:20px;
         }
     }
 </style>
@@ -156,7 +160,7 @@
                 <p class="actualPrice">$169.99</p>
             </div>
             <div class="book">
-                <button type="submit">Book Now</button>
+                <button type="submit">Book Now 🛒</button>
             </div>
         </div>
     </div>
