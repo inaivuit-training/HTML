@@ -1,139 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        html{
-            font-size: 20px;
-        }
-        body{
-            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-            background-color:antiquewhite;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            overflow-x: hidden;
-        }
-        .card{
-            display: flex;
-            background-color: white;
-            border-radius: 12px;
-            max-width: 900px;
-            width: 100%;
-             overflow: hidden;
-        }
-        .card-img{
-            flex: 1;
-            max-width: 50%;
-        }
-        .card-img img {
-            /* width: 50%; */
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .content {
-            flex: 1;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            /* justify-content: space-between;
-            width: 50%; */
-        }
-        .subtitle {
-           font-size: 0.75rem;
-           letter-spacing: 2px;
-           margin-bottom: 8px;
-        }
-        h1{
-           font-size: 2rem;
-           font-weight: thick;
-           margin: 0 0 16px 0; 
-        }
-        p{
-            font-size: 0.895rem;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-        .price{
-            font-size: 1.7rem;
-            font-weight: bold;
-            color: #3c8067;
-        }
-        .old-price {
-            font-size: 0.875rem;
-            text-decoration: line-through;
-            margin-left: 20px;
-            color: #555;
-            font-weight: normal;
-            vertical-align: super;
-      }
-      .btn {
-            margin-top: 20px;
-            text-decoration: none;
-            background-color: #3c8067;
-            color: white;
-            padding: 12px 24px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 15px;
-            font-weight: bold;
-            gap: 8px;
-        }
-        @media (max-width: 528px) {
-            
-            .card {
-               flex-direction: column;
-               font-size: 16px;
-               width: 100vw;
-               height: 100vh;
-               margin: 0 ;
-               border-radius: 0;
-            }
-            .card-img{
-                max-width: 100%;
-            }
-            .card-img img{
-                height: 100%;
-            }
-            .btn {
-               width: 100%;
-            }
-            /* .content{
-                width: 90%;
-                flex-wrap: wrap;
-            } */
-            h1{
-                font-size: 20px
-            }
-            p{
-                font-size: 16px;
-            }
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Card</title>
+  <style>
+    :root {
+      /* Layout */
+      --font-size-base: 20px;
+      --card-max-width: 900px;
+      --card-radius: 12px;
+      --card-padding: 20px;
 
-    </style>
+      /* Colors */
+      --color-body-bg: antiquewhite;
+      --color-card-bg: #fff;
+      --color-subtitle: #444;
+      --color-title: #000;
+      --color-text: #333;
+      --color-price: #3c8067;
+      --color-price-old: #555;
+      --color-btn-bg: #3c8067;
+      --color-btn-text: #fff;
+
+      /* Button */
+      --btn-radius: 5px;
+      --btn-padding: 12px 24px;
+      --btn-font-size: 15px;
+      --btn-bg-hover: #295b47;
+      
+    }
+
+    html {
+      font-size: var(--font-size-base);
+    }
+
+    body {
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      background-color: var(--color-body-bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background-color: var(--color-card-bg);
+      border-radius: var(--card-radius);
+      max-width: var(--card-max-width);
+      overflow: hidden;
+      margin: 20px auto;
+    }
+
+    .card__img {
+      overflow: hidden;
+    }
+
+    .card__img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card__content {
+      padding: var(--card-padding);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .card__subtitle {
+      font-size: 0.75rem;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+      color: var(--color-subtitle);
+    }
+
+    .card__title {
+      font-size: 2rem;
+      font-weight: bold; /* fixed "thick" issue */
+      margin: 0 0 16px 0; 
+      color: var(--color-title);
+    }
+
+    .card__description {
+      font-size: 0.895rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      color: var(--color-text);
+    }
+
+    .card__price {
+      font-size: 1.7rem;
+      font-weight: bold;
+      color: var(--color-price);
+      margin-right: 5px;
+    }
+
+    .card__price--old {
+      font-size: 0.875rem;
+      text-decoration: line-through;
+      margin-left: 20px;
+      color: var(--color-price-old);
+      font-weight: normal;
+      vertical-align: super;
+    }
+
+    .card__btn {
+      margin-top: 20px;
+      text-decoration: none;
+      background-color: var(--color-btn-bg);
+      color: var(--color-btn-text);
+      padding: var(--btn-padding);
+      border: none;
+      border-radius: var(--btn-radius);
+      cursor: pointer;
+      font-size: var(--btn-font-size);
+      font-weight: bold;
+    }
+    .card__btn:hover {
+  background-color: var(--btn-bg-hover);
+}
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      body {
+        display: block;
+        background: var(--color-card-bg);
+      }
+      .card {
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        border-radius: 0;
+      }
+      .card__content {
+        padding: 15px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="card">
-       <div class="card-img"> 
-          <img src="img/HarryPotter.jpg" alt="Harry Potter - and the Philosopher's Stone"/>
-        </div>
-        <div class="content">
-            <p class="subtitle">BOOK</p>
-            <h1>Harry Potter - and the Philosopher's Stone</h1>
-            <p>Harry Potter learns he is a wizard and begins his first year at Hogwarts School of Witchcraft and Wizardry, where he makes friendsand discovers he must protect the legendary Philosopher's Stone from falling into the hands of the dark wizard Lord Voldemort </p>
-
-            <div>
-                <span class="price">$399</span><span class="old-price">$599</span>
-            </div> 
-
-            <button class="btn">&#128722;   Add to Cart</button>
-        </div>
+  <div class="card">
+    <div class="card__img"> <!--image-->
+      <img src="img/HarryPotter.jpg" alt="Harry Potter - and the Philosopher's Stone"/>
     </div>
+
+    <div class="card__content"> <!--content -->
+      <p class="card__subtitle">BOOK</p>
+      <h1 class="card__title">Harry Potter - and the Philosopher's Stone</h1>
+      <p class="card__description">
+        Harry Potter learns he is a wizard and begins his first year at Hogwarts School of Witchcraft and Wizardry, where he makes friends and discovers he must protect the legendary Philosopher's Stone from falling into the hands of the dark wizard Lord Voldemort.
+      </p>
+      <div class="card__pricing">
+        <span class="card__price">$399</span>
+        <span class="card__price--old">$599</span>
+      </div> 
+      <button class="card__btn">&#128722; Add to Cart</button>
+    </div>
+    
+  </div>
 </body>
 </html>

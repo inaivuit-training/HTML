@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            font-size: 20px;
+        }
+        body{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            background-color:antiquewhite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        .card{
+            display: flex;
+            background-color: white;
+            border-radius: 12px;
+            max-width: 900px;
+            width: 100%;
+             overflow: hidden;
+        }
+        .card-img{
+            flex: 1;
+            max-width: 50%;
+        }
+        .card-img img {
+            /* width: 50%; */
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: space-between;
+            width: 50%; */
+        }
+        .subtitle {
+           font-size: 0.75rem;
+           letter-spacing: 2px;
+           margin-bottom: 8px;
+        }
+        h1{
+           font-size: 2rem;
+           font-weight: thick;
+           margin: 0 0 16px 0; 
+        }
+        p{
+            font-size: 0.895rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .price{
+            font-size: 1.7rem;
+            font-weight: bold;
+            color: #3c8067;
+        }
+        .old-price {
+            font-size: 0.875rem;
+            text-decoration: line-through;
+            margin-left: 20px;
+            color: #555;
+            font-weight: normal;
+            vertical-align: super;
+      }
+      .btn {
+            margin-top: 20px;
+            text-decoration: none;
+            background-color: #3c8067;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: bold;
+            gap: 8px;
+        }
+        @media (max-width: 768px) {
+            
+            .card {
+               flex-direction: column;
+               font-size: 16px;
+               width: 100vw;
+               height: 100vh;
+               margin: 0 ;
+               border-radius: 0;
+            }
+            .card-img{
+                max-width: 100%;
+            }
+            .card-img img{
+                height: 100%;
+            }
+            .btn {
+               width: 100%;
+            }
+            /* .content{
+                width: 90%;
+                flex-wrap: wrap;
+            } */
+            h1{
+                font-size: 20px
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+       <div class="card-img"> 
+          <img src="img/HarryPotter.jpg" alt="Harry Potter - and the Philosopher's Stone"/>
+        </div>
+        <div class="content">
+            <p class="subtitle">BOOK</p>
+            <h1>Harry Potter - and the Philosopher's Stone</h1>
+            <p>Harry Potter learns he is a wizard and begins his first year at Hogwarts School of Witchcraft and Wizardry, where he makes friendsand discovers he must protect the legendary Philosopher's Stone from falling into the hands of the dark wizard Lord Voldemort </p>
+
+            <div>
+                <span class="price">$399</span><span class="old-price">$599</span>
+            </div> 
+
+            <button class="btn"> &#128722;   Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>
