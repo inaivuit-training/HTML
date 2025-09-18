@@ -16,10 +16,14 @@
     html {
       font-size: 20px;
     }
-
+    :root{
+      --body_backgroud:#f8f4ed;
+      --card_background: #fff;
+      --card_radius:10px;
+    }
     body {
       font-family: "Montserrat", sans-serif;
-      background-color: #f8f4ed;
+      background-color: var(--body_backgroud);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -32,13 +36,12 @@
     }
 
     .card {
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      background:var(--card_background);
+      border-radius: var(--card_radius);
       overflow: hidden;
       max-width: 900px;
       display: flex;
-      flex-direction: row; /* Desktop first */
+      flex-direction: row; 
     }
 
     .card__image {
@@ -99,7 +102,7 @@
       color: #fff;
       border: none;
       padding: 1rem;
-      border-radius: 8px;
+      border-radius: var(--card_radius);
       font-size: 1.2rem;
       font-weight: bold;
       cursor: pointer;
