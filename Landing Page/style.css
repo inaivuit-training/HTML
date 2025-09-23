@@ -1,34 +1,28 @@
-
-
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 :root {
-    --mainColor: #6b2c28;
+    --mainColor: #9f4d47;
     --navFontSize: 1.3rem;
-
-    --leftRightSpacing:350px;
-
+    --contentBgColor: rgb(231, 228, 228);
+    --layercolor: rgba(0, 0, 0, 0.544);
+    --contentTopSpacing: 100px;
     /* banner text color */
-    --bannerTextColor:white;
-
+    --bannerTextColor: white;
     /* fontsize */
     /* Section bottom margin */
-    --bottomMargin:100px;
-    
+    --bottomMargin: 100px;
+
 }
-p{
+
+p {
     margin: 0;
 }
-.custom-navbar {
-    padding-left: var(--leftRightSpacing);
-    padding-right:var(--leftRightSpacing);
-}
+
 
 .navbar-nav .nav-link {
     font-size: var(--navFontSize);
@@ -43,7 +37,7 @@ p{
 
 .cart-icon {
     color: var(--mainColor);
-    
+
 }
 
 .cart-icon:hover {
@@ -51,7 +45,7 @@ p{
     color: #551d1b;
 }
 
-.banner{
+.banner {
     background: url("img/main.webp") center center / cover no-repeat;
     min-height: 900px;
     display: flex;
@@ -60,54 +54,184 @@ p{
     text-align: center;
     justify-content: center;
     margin-bottom: var(--bottomMargin);
+    position: relative;
 }
 
-.banner__content{
-    padding-left: var(--leftRightSpacing);
-    padding-right: var(--leftRightSpacing);
-    color:var(--bannerTextColor);
-    font-size:var(--bannerTextsize);
+.banner::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--layercolor);
 }
-.banner__btn,.new-collection__btn{
-    background-color:var(--mainColor);
+
+
+.banner__content {
+    color: var(--bannerTextColor);
+    max-width: 750px;
+    z-index: 1;
+}
+
+.banner__btn,
+.new-collection__btn,
+.workshop__btn {
+    background-color: var(--mainColor);
     color: white;
-    min-width: 100px;
+    width: 200px;
     border: none;
-    padding: 10px;
+    padding: 15px;
 
 }
 
-.seller{
+.ourStory {
+    background: url("img/ourstory-image.webp") center/cover no-repeat;
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.ourStory::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--layercolor);
+}
+
+.ourStory__content {
+    color: var(--bannerTextColor);
+    z-index: 1;
+
+}
+
+.seller {
     margin-bottom: var(--bottomMargin);
 }
 
-.seller__image{
-    height:350px;
-    width:100%;
+.seller__image {
+    height: 300px;
+    width: 100%;
     object-fit: cover;
 
 }
 
-.seller__content{
+.seller__content {
     padding-top: 15px;
     font-size: 1.1rem;
 }
-.New-collection{
+
+.New-collection {
     background-color: rgb(231, 228, 228);
     margin-bottom: var(--bottomMargin);
-    padding: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    padding-top: var(--contentTopSpacing);
+    padding-bottom: var(--contentTopSpacing);
 }
 
-@media (max-width: 768px) {
+.New-collection__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.New-collection__imageRow {
+    height: 500px;
+}
+
+.workshop {
+    margin-bottom: var(--bottomMargin);
+}
+
+.workshop__content {
+    padding-left: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.workshop-image {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+.our-employees {
+    background-color: var(--contentBgColor);
+    padding-top: var(--contentTopSpacing);
+    padding-bottom: var(--contentTopSpacing);
+    margin-bottom: var(--bottomMargin);
+    text-align: center;
+
+}
+
+.our-employees__content {
+    margin-top: var(--contentTopSpacing);
+}
+
+.our-employees__img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.gallery {
+    margin-bottom: var(--bottomMargin);
+    height: 700px;
+}
+
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.862);
+    color: var(--bannerTextColor);
+    font-size: 18px;
+
+}
+
+i {
+    padding: 10px;
+    font-size: 23px;
+    color: rgb(124, 227, 124);
+}
+
+.gallery__image1 {
+    height: 48%
+}
+
+.gallery__image2 {
+    height: 49%
+}
+
+@media (max-width: 600px) {
     #mobileMenu {
         --bs-offcanvas-width: 220px;
     }
-    :root{
-        --leftRightSpacing:0;
+
+    .banner__heading {
+        font-size: 4rem;
+    }
+
+    .New-collection__content {
+        text-align: center;
+        align-items: center;
+    }
+
+    .workshop__content {
+        padding-left: 10px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .ourStory {
+        text-align: center;
+    }
+
+    .gallery__image1 {
+        height: 32%;
+    }
+
+    .gallery__image2 {
+        height: 32%;
     }
 }
-    

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
+    <link rel="icon" href="img/favicon.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -13,7 +14,7 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-light custom-navbar">
-        <div class="container-fluid">
+        <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="img/logo.png" alt="Logo" height="50">
             </a>
@@ -59,13 +60,13 @@
         <!-- hero/Banner -->
         <section class="container-fluid banner">
             <div class="banner__content">
-                <h1 class="display-2 fw-bold">Ceramics studio</h1>
+                <h1 class="display-1 fw-bold banner__heading">Ceramics studio</h1>
                 <p class="fs-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec orci massa,
                     dapibus quis molestie sit
                     amet, pharetra vitae dolor. Praesent auctor, dui id maximus sagittis, lectus enim pharetra quam, ut
                     laoreet tortor metus ut ipsum.
                 </p>
-                <button class="banner__btn fs-4 px-5 mt-4">
+                <button class="banner__btn mt-5">
                     show More
                 </button>
             </div>
@@ -73,7 +74,7 @@
 
         <!-- Best Sellers -->
 
-        <section class="container seller">
+        <section class="seller container">
             <div>
                 <h1 class="display-4 fw-bold text-center">Best seller</h1>
             </div>
@@ -123,41 +124,186 @@
         <section class="New-collection">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-6 text-center">
-                        <h1 class="display-4">New Collection</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum sapien ac sapien
+                    <div class="col-12 col-lg-5 p-3 mb-5 New-collection__content">
+                        <h1 class="mb-3 fw-bold display-4">New Collection</h1>
+                        <p class="mb-3 fs-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum
+                            sapien ac
+                            sapien
                             vestibulum posuere. Praesent congue dui nec lectus tincidunt elementum. Donec viverra a
                             neque vel egestas. Ut quis urna orci. Nullam sollicitudin est et quam rhoncus, nec imperdiet
                             sem efficitur. Etiam aliquam posuere hendrerit. Curabitur egestas sed nisl rhoncus finibus.
                         </p>
                         <button class="new-collection__btn">
-                            more
+                            More
                         </button>
                     </div>
                     <!-- new collection images -->
-                    <div class="col-12 col-lg-6 g-1">
-                        <div class="row h-100">
-                            <!-- Left two stacked images -->
-                            <div class="col-6 d-flex flex-column gap-2">
-                                <img src="img/collection.webp" alt="collection" class="img-fluid h-45">
-                                <img src="img/collection.webp" alt="collection" class="img-fluid h-45">
+                    <div class="col-12 col-lg-7">
+                        <div class="row New-collection__imageRow">
+                            <!-- Left column -->
+                            <div class="col-12 col-lg-5 d-flex flex-lg-column gap-4 order-2 order-lg-1 mt-4 mt-lg-0">
+                                <div class="flex-fill">
+                                    <img src="img/collection.webp" alt="collection" class="img-fluid w-100 h-100"
+                                        style="object-fit: cover;">
+                                </div>
+                                <div class="flex-fill">
+                                    <img src="img/collection.webp" alt="collection" class="img-fluid w-100 h-100"
+                                        style="object-fit: cover;">
+                                </div>
                             </div>
 
-                            <!-- Right tall image -->
-                            <div class="col-6 d-flex">
-                                <img src="img/collection.webp" alt="collection" class="img-fluid w-100">
+                            <!-- Right column-->
+                            <div class="col-12 col-lg-7 d-flex order-1 order-lg-2">
+                                <img src="img/collection.webp" alt="collection" class="img-fluid w-100 h-100"
+                                    style="object-fit: cover;">
                             </div>
                         </div>
                     </div>
 
+
                 </div>
             </div>
+
+
+            </div>
+
+        </section>
+
+        <!-- Workshop -->
+        <section class="workshop container">
+            <div class="row">
+                <!-- image column -->
+                <div class="col-12 col-lg-6 order-2 order-lg-1">
+                    <img src="img/Workshop-image.webp" alt="Workshop" class="img-fluid workshop-image">
+                </div>
+                <!-- content column -->
+                <div class="col-12 col-lg-6 order-1 order-lg-2 workshop__content mb-5 mb-lg-0">
+                    <h1 class="mb-3 fw-bold display-4">Workshops</h1>
+                    <p class="mb-3 fs-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum
+                        sapien ac
+                        sapien
+                        vestibulum posuere. Praesent congue dui nec lectus tincidunt elementum. Donec viverra a neque
+                        vel egestas. Ut quis urna orci. Nullam sollicitudin est et quam rhoncus, nec imperdiet sem
+                        efficitur. Etiam aliquam posuere hendrerit. Curabitur egestas sed nisl rhoncus finibus.
+                    </p>
+                    <button class="workshop__btn w-40">Subscribe</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- our employees -->
+        <section class="our-employees">
+            <div class="container">
+                <h1 class="fw-bold text-center">Our Employees</h1>
+                <div class="row our-employees__content">
+                    <div class="col-12 col-lg-4 px-5 mb-5">
+                        <img src="img/profile-image.webp" alt="profile" class="img-fluid mb-4 our-employees__img">
+                        <p class="fs-4 mb-2">Tharunkumar</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum sapien ac sapien
+                            vestibulum posuere. Praesent congue dui nec lectus tincidunt elementum.</p>
+                    </div>
+                    <div class="col-12 col-lg-4 px-5 mb-5">
+                        <img src="img/profile-image.webp" alt="profile" class="img-fluid mb-4 our-employees__img">
+                        <p class="fs-4 mb-2">Priyanka</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum sapien ac sapien
+                            vestibulum posuere. Praesent congue dui nec lectus tincidunt elementum.</p>
+                    </div>
+                    <div class="col-12 col-lg-4 px-5 mb-5">
+                        <img src="img/profile-image.webp" alt="profile" class="img-fluid mb-4 our-employees__img">
+                        <p class="fs-4 mb-2">Nandhini</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum sapien ac sapien
+                            vestibulum posuere. Praesent congue dui nec lectus tincidunt elementum.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Gallery -->
+        <section class="gallery container">
+            <div class="row h-100">
+                <div class="col-6 h-100"> <img src="img/gallery-img1.webp" alt="gallery" class="img-fluid w-100 h-100"
+                        style="object-fit: cover;"> </div>
+                <div class="col-6 h-100 d-flex flex-column">
+                    <div class="row h-100 g-3">
+                        <div class="col-12 gallery__image1"> <img src="img/gallery-img2.webp" alt="gallery"
+                                class="img-fluid w-100 h-100" style="object-fit: cover;">
+                        </div>
+                        <div class="col-12 col-lg-6 gallery__image2"> <img src="img/gallery-img3.webp" alt="gallery"
+                                class="img-fluid w-100 h-100" style="object-fit: cover;">
+                        </div>
+                        <div class="col-12 col-lg-6 gallery__image2"> <img src="img/gallery-img4.webp" alt="gallery"
+                                class="img-fluid w-100 h-100" style="object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Our Story -->
+        <section class="ourStory">
+            <div class="container">
+                <div class="row">
+                    <div class="ourStory__content col-12 col-lg-5">
+                        <h1 class="fw-bold display-4">Our Story</h1>
+                        <p class="fs-5 p-3 p-lg-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                            elementum
+                            sapien ac
+                            sapien vestibulum posuere. Praesent congue dui nec lectus tincidunt elementum. Donec viverra
+                            a
+                            neque
+                            vel egestas. Ut quis urna orci. Nullam sollicitudin est et quam rhoncus, nec imperdiet sem
+                            efficitur. Etiam aliquam posuere hendrerit. Curabitur egestas sed nisl rhoncus finibus.
+                        </p>
+
+                    </div>
+                </div>
+
             </div>
 
         </section>
 
 
     </main>
+    <!-- footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row text-center text-lg-start">
+                <div class="col-12 col-lg pb-5 pb-lg-0">
+                    <p>02-233 Warszawa</p>
+                    <br>
+                    <p>Al. Jerozolimskie 12</p>
+                </div>
+                <div class="col-12 col-lg pb-5 pb-lg-0">
+                    <p>email@contact.com</p>
+                    <br>
+                    <p>+48 500 500 500</p>
+                </div>
+                <div class="col-12 col-lg pb-5 pb-lg-0">
+                    <p>store Regulations</p>
+                    <br>
+                    <p>Privacy policy</p>
+                </div>
+                <div class="col-12 col-lg pb-5 pb-lg-0">
+                    <p>Delivery</p>
+                    <br>
+                    <p>Returns & exchange</p>
+                </div>
+                <div class="col-12 col-lg pb-5 pb-lg-0">
+                    <p>
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-twitter"></i>
+                        <i class="bi bi-instagram"></i>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
