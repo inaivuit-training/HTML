@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creamics Studio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!--icon-->
+
+</head>
+
+<body>
+  <!--Nav Section-->
+  <div class="contianer bg-light">
+    <nav class="navbar navbar-expand-lg bg-light custom-navbar  ">
+      <div class="container-fluid">
+
+        <div class="navbar-brand">
+          <img src="img/logo1.png" alt="Ceramic Logo"> <!-- logo -->
+        </div>
+
+        <div class="d-flex align-items-center ms-auto d-lg-none ">
+          <span class="cart-icon d-lg-none ms-auto me-2"> <!-- Mobile cart-icon view -->
+            <i class="fa-solid fa-cart-shopping"></i>
+          </span>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex "> <!-- Desktop view li -->
+
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link px-3" href="#">SHOP</a></li>
+            <li class="nav-item"><a class="nav-link px-3" href="#">WORKSHOP</a></li>
+            <li class="nav-item"><a class="nav-link px-3" href="#">BLOG</a></li>
+            <li class="nav-item"><a class="nav-link px-3" href="#">CONTACT</a></li>
+
+            <li class="nav-item d-none d-lg-block"> <span class="cart-icon"><i
+                  class="fa-solid fa-cart-shopping"></i></span></li> <!-- Desktop cart-icon view -->
+          </ul>
+        </div>
+
+        <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasRight"
+          aria-labelledby="offcanvasRightLabel"> <!-- Mobile view li -->
+          <div class="offcanvas-body">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="#">SHOP</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">WORKSHOP</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </div>
+
+  <!--Hero Section -->
+
+  <section class="hero">
+    <div class="hero__content">
+      <h1 class="hero__title">Ceramics studio</h1>
+      <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec orci massa, dapibus quis
+        molestie sit amet, pharetra vitae dolor. Praesent auctor, dui id maximus sagittis, lectus enim pharetra quam, ut
+        laoreet tortor metus ut ipsum.</p>
+      <button>Show More </button>
+    </div>
+  </section>
+
+  <!-- Best Sellers -->
+  <section class="bestsellers-section">
+    <h2 class="Bestsellers-title">Bestsellers</h2>
+    <div class="products-images">
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="img/product_3.webp" alt="Sara Mug">
+        </div>
+        <h3 class="product-name">Sara Mug</h3>
+        <p class="product-price">20 USD</p>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="img/product_6.webp" alt="Moon Plate">
+        </div>
+        <h3 class="product-name">Moon Plate</h3>
+        <p class="product-price">30 USD</p>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="img/product_4C.webp" alt="Silver Set">
+        </div>
+        <h3 class="product-name">Silver Set</h3>
+        <p class="product-price">40 USD</p>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="img/Workshop_2.webp" alt="Workshops for adults">
+        </div>
+        <h3 class="product-name">Workshops for adults</h3>
+        <p class="product-price">210 USD</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- New Collection -->
+  <section class="collection-section">
+    <div class="collection">
+      <!-- Left content -->
+      <div class="collection-content">
+        <h2 class="content__title">New collection</h2>
+        <p class="content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum sapien ac
+          sapien vestibulum posuere. Praesent congue dui nec lectus tincidunt elementum. Donec viverra a neque vel
+          egestas. Ut quis urna orci. Nullam sollicitudin est et quam rhoncus, nec imperdiet sem efficitur.</p>
+        <button class="btns">More</button>
+      </div>
+
+      <!-- Right images -->
+      <div class="collection-images">
+        <img src="img/ceramics_2.webp" alt="Ceramics" class="img1">
+        <img src="img/ceramics_2.webp" alt="Ceramics" class="img2 big">
+        <img src="img/ceramics_2.webp" alt="Ceramics" class="img3">
+      </div>
+    </div>
+  </section>
+
+  <!-- Workshop -->
+
+  <section class="workshop-section">
+    <div class="workshop">
+      <!-- Left content -->
+      <div class="workshop-image">
+        <img src="img/Workshop_4.webp" alt="workshop">
+      </div>
+      <!-- Right images -->
+      <div class="workshop-content">
+        <h2 class="content__title">Workshops</h2>
+        <p class="content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum sapien ac
+          sapien vestibulum posuere. Praesent congue dui nec lectus tincidunt elementum. Donec viverra a neque vel
+          egestas. Ut quis urna orci. Nullam sollicitudin est et quam rhoncus, nec imperdiet sem efficitur.</p>
+        <button class="btns">Subscribe</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Employee Section -->
+
+  <section class="team-section">
+    <h2 class="team-title">Our Employees</h2>
+    <div class="team-members">
+      <div class="team-member">
+        <img src="img/profile.png" alt="Mary Smith">
+        <h3 class="member-name">Mary Smith</h3>
+        <p class="member-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum sapien ac
+          sapien vestibulum posuere. Praesent congue dui nec lectus tincidunt elementum</p>
+      </div>
+
+      <div class="team-member">
+        <img src="img/profile2.png" alt="James Jones">
+        <h3 class="member-name">James Jones</h3>
+        <p class="member-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum sapien ac
+          sapien vestibulum posuere. Praesent congue dui nec lectus tincidunt elementum</p>
+      </div>
+
+      <div class="team-member">
+        <img src="img/profile.png" alt="Emily Murphy">
+        <h3 class="member-name">Emily Murphy</h3>
+        <p class="member-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum sapien ac
+          sapien vestibulum posuere. Praesent congue dui nec lectus tincidunt elementum</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery-section">
+    <div class="gallery">
+
+      <div class="left">
+        <img src="img/product_2A.webp" alt="Ceramic Bottles">
+      </div>
+
+      <div class="right-top">
+        <img src="img/product_6.webp" alt="Ceramic bowls">
+      </div>
+
+      <div class="right-bottomLeft">
+        <div class="bottom-grid">
+          <div class="bottomLeft">
+            <img src="img/product_4A.webp" alt="Ceramic cup ">
+          </div>
+
+          <div class="bottomRight">
+            <img src="img/product_5.webp" alt="Ceramic Bottle">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Banner -->
+
+  <section class="banner"> <!--Banner Section -->
+    <div class="banner__content">
+      <h1 class="banner__title">Our Story</h1>
+      <p class="banner__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum sapien ac sapien
+        vestibulum posuere. Praesent congue dui nec lectus tincidunt elementum. Donec viverra a neque vel egestas. Ut
+        quis urna orci. Nullam sollicitudin est et quam rhoncus, nec imperdiet sem efficitur. Etiam aliquam posuere
+        hendrerit. Curabitur egestas sed nisl rhoncus finibus.</p>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-column">
+        <p>02-233 Warszawa</p>
+        <p>Al. Jerozolimskie 12</p>
+      </div>
+
+      <div class="footer-column">
+        <p>email@contact.com</p>
+        <p>+48 500 500 500</p>
+      </div>
+
+      <div class="footer-column">
+        <p>Store Regulations</p>
+        <p>Privacy policy</p>
+      </div>
+
+      <div class="footer-column">
+        <p>Delivery</p>
+        <p>Returns & exchanges</p>
+      </div>
+
+      <div class="footer-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
