@@ -77,7 +77,7 @@ p {
 .workshop__btn {
     background-color: var(--mainColor);
     color: white;
-    width: 200px;
+    max-width: 200px;
     border: none;
     padding: 15px;
 
@@ -206,10 +206,6 @@ i {
 @media (max-width: 600px) {
     #mobileMenu {
         --bs-offcanvas-width: 220px;
-    }
-
-    .banner__heading {
-        font-size: 4rem;
     }
 
     .New-collection__content {
