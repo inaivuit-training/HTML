@@ -37,7 +37,7 @@
   /* 60px */
   --spacing-section-margin: 2rem;
   --spacing-sec-margin: 30px;
-  --spacing-paragraph-bottom: 1.25rem;
+  --spacing-paragraph-bottom: 1.5rem;
   /* 20px */
   --spacing-btn-y: 0.75rem;
   /* 12px */
@@ -49,7 +49,7 @@
 
   /* Heights */
   --height-navbar-logo: 60px;
-  --height-hero: 90vh;
+  --height-hero: 900px;
   --height-product-img: 280px;
   --height-product-img-mobile: 200px;
   --height-collection-img-small: 200px;
@@ -81,10 +81,7 @@
 }
 
 /* Navbar*/
-.custom-navbar {
-  padding-left: var(--spacing-nav);
-  padding-right: var(--spacing-nav);
-}
+
 
 .navbar-brand img {
   height: var(--height-navbar-logo);
@@ -114,7 +111,7 @@
 /* Hero Section*/
 .hero {
   background: url(img/main.webp) no-repeat center center/cover;
-  height: var(--height-hero);
+  min-height: var(--height-hero);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -132,7 +129,7 @@
 }
 
 .hero__content {
-  position: relative;
+  /* position: relative; */
   max-width: 700px;
   z-index: 1;
 }
@@ -498,9 +495,28 @@
 }
 
 /* Responsive */
-@media (max-width: 720px) {
+@media (max-width: 600px) {
+  
+  .navbar-brand{
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .hero__content{
+    padding: 0 4px 0 4px;
+  }
+  .hero__title{
+    font-size: 3rem;
+  }
+  .hero__text{
+    font-size: 1rem;
+    margin-bottom: 3rem;
+  }
+
   .custom-navbar {
     padding: 0;
+  }
+  .Bestsellers-title ,.content__title ,.team-title {
+    font-size: 2rem;
   }
 
   .products-images {
